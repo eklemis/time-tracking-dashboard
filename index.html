@@ -9,71 +9,175 @@
   <title>Frontend Mentor | Time tracking dashboard</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style  rel="stylesheet" href="Style.css">
-
-  </style>
+  <link  rel="stylesheet" href="Style.css">
 </head>
 <body>
+  <nav class="state">
+    <div class="top-card">
+      <div class="top-card-img">
+        <img src="./images/image-jeremy.png"/>
+      </div>
+      <div class="info">
+        <h2>Report for</h2>
+        <h1>Jeremy Robson</h1>
+      </div>      
+    </div>
+    <div class="bottom-card">
+      <a href="#">Daily</a>
+      <a class="active" href="#">Weekly</a>
+      <a href="#">Monthly</a>
+    </div>  
+  </nav>
+  <br>
+  <br>
+  <section class="activities">
+    <!-- Work Activity -->
+    <div class="activity">
+      <div class="top-box work">
+        <img src="./images/icon-work.svg">
+      </div>
+      <div class="bottom-box">
+        <div class="item left">
+          <h2 class="activity-title">Work</h2>
+          <h1 class="activity-hr">32hrs</h1>
+        </div>
+        <div class="item right">
+          <h1 class="activity-more-info">...</h1>
+          <h2 class="activity-prev-time">Last week - 36hrs</h2>
+        </div>
+      </div>
+    </div>
+    <!-- End Work Activity -->
+    <!-- Play Activity -->
+    <div class="activity">
+      <div class="top-box play">
+        <img src="./images/icon-play.svg">
+      </div>
+      <div class="bottom-box">
+        <div class="item left">
+          <h2 class="activity-title">Play</h2>
+          <h1 class="activity-hr">10hrs</h1>
+        </div>
+        <div class="item right">
+          <h1 class="activity-more-info">...</h1>
+          <h2 class="activity-prev-time">Last week - 8hrs</h2>
+        </div>
+      </div>
+    </div>
+    <!-- End Play Activity -->
+    <!-- Work Activity -->
+    <div class="activity">
+      <div class="top-box study">
+        <img src="./images/icon-study.svg">
+      </div>
+      <div class="bottom-box">
+        <div class="item left">
+          <h2 class="activity-title">Study</h2>
+          <h1 class="activity-hr">4hrs</h1>
+        </div>
+        <div class="item right">
+          <h1 class="activity-more-info">...</h1>
+          <h2 class="activity-prev-time">Last week - 7hrs</h2>
+        </div>
+      </div>
+    </div>
+    <!-- End Work Activity -->
+    <!-- Work Activity -->
+    <div class="activity">
+      <div class="top-box exercise">
+        <img src="./images/icon-exercise.svg">
+      </div>
+      <div class="bottom-box">
+        <div class="item left">
+          <h2 class="activity-title">Exercise</h2>
+          <h1 class="activity-hr">4hrs</h1>
+        </div>
+        <div class="item right">
+          <h1 class="activity-more-info">...</h1>
+          <h2 class="activity-prev-time">Last week - 5hrs</h2>
+        </div>
+      </div>
+    </div>
+    <!-- End Work Activity -->
+    <!-- Work Activity -->
+    <div class="activity">
+      <div class="top-box social">
+        <img src="./images/icon-social.svg">
+      </div>
+      <div class="bottom-box">
+        <div class="item left">
+          <h2 class="activity-title">Social</h2>
+          <h1 class="activity-hr">5hrs</h1>
+        </div>
+        <div class="item right">
+          <h1 class="activity-more-info">...</h1>
+          <h2 class="activity-prev-time">Last week - 10hrs</h2>
+        </div>
+      </div>
+    </div>
+    <!-- End Work Activity -->
+    <!-- Work Activity -->
+    <div class="activity">
+      <div class="top-box self-care">
+        <img src="./images/icon-self-care.svg">
+      </div>
+      <div class="bottom-box">
+        <div class="item left">
+          <h2 class="activity-title">Self Care</h2>
+          <h1 class="activity-hr">2hrs</h1>
+        </div>
+        <div class="item right">
+          <h1 class="activity-more-info">...</h1>
+          <h2 class="activity-prev-time">Last week - 2hrs</h2>
+        </div>
+      </div>
+    </div>
+    <!-- End Work Activity -->
 
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
+    Play
+    1hr <!-- daily -->
+    Previous - 2hrs <!-- daily -->
+    10hrs <!-- weekly -->
+    Previous - 8hrs <!-- weekly -->
+    23hrs <!-- monthly -->
+    Previous - 29hrs <!-- monthly -->
+  
+    Study
+    0hrs <!-- daily -->
+    Previous - 1hr <!-- daily -->
+    4hrs <!-- weekly -->
+    Previous - 7hrs <!-- weekly -->
+    13hrs <!-- monthly -->
+    Previous - 19hrs <!-- monthly -->
+  
+    Exercise
+    1hr <!-- daily -->
+    Previous - 1hr <!-- daily -->
+    4hrs <!-- weekly -->
+    Previous - 5hrs <!-- weekly -->
+    11hrs <!-- monthly -->
+    Previous - 18hrs <!-- monthly -->
+  
+    Social
+    1hr <!-- daily -->
+    Previous - 3hrs <!-- daily -->
+    5hrs <!-- weekly -->
+    Previous - 10hrs <!-- weekly -->
+    21hrs <!-- monthly -->
+    Previous - 23hrs <!-- monthly -->
+  
+    Self Care
+    0hrs <!-- daily -->
+    Previous - 1hr <!-- daily -->
+    2hrs <!-- weekly -->
+    Previous - 2hrs <!-- weekly -->
+    7hrs <!-- monthly -->
+    Previous - 11hrs <!-- monthly -->
+  </section>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Eklemis Santo Ndun</a>.
   </div>
 </body>
 </html>
