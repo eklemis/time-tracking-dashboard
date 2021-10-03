@@ -194,6 +194,12 @@ h2.activity-prev-time{
         margin: 0px 0px;
         grid-row: 1 / span 2;
     }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 30px;
+        column-gap: 30px;
+    }
     .activity{
         width: 18vw;
         margin: 0px 0px;
