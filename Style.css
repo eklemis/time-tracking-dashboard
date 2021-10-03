@@ -24,6 +24,7 @@ body h2{
 }
 .state{
     width: 320px;
+    min-width: 194px;
     margin: 30px auto;
     overflow: visible;
 }
@@ -90,6 +91,7 @@ body h2{
 
 .activity{
     width: 320px;
+    min-width: 194px;
     margin: 30px auto;
     overflow: visible;
 }
@@ -205,6 +207,7 @@ h2.activity-prev-time{
         padding-top: 50px;
         flex-direction: column;
         align-items:flex-start;
+        min-height: 171px;
         height: calc( 30vh + 24px );
         grid-row-gap: 10px;
         padding-left: 30px;
@@ -217,6 +220,7 @@ h2.activity-prev-time{
     }
     .activity .bottom-box{
         grid-template-rows: 1fr 1fr 1fr;
+        min-height: 177px;
         height: calc(30vh + 3px);
     }
     h1.activity-hr{

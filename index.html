@@ -7,8 +7,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- Load Json data and Javascript -->
+  <script type="text/javascript" src="data.json"></script>
+  <script type="text/javascript" src="Script.js"></script>
+  <!-- Load CSS -->
   <link  rel="stylesheet" href="Style.css">
 </head>
 <body>
@@ -24,9 +26,9 @@
         </div>      
       </div>
       <div class="bottom-card">
-        <a href="#">Daily</a>
-        <a class="active" href="#">Weekly</a>
-        <a href="#">Monthly</a>
+        <a id="daily-opt" onclick="set_active(this, 0)" href="#">Daily</a>
+        <a id="weekly-opt" onclick="set_active(this, 1)" class="active" href="#">Weekly</a>
+        <a id="monthly-opt" onclick="set_active(this, 2)" href="#">Monthly</a>
       </div>  
     </nav>
     <!-- Work Activity -->
@@ -37,8 +39,8 @@
       <div class="bottom-box">
           <h2 class="activity-title">Work</h2>
           <h1 class="activity-more-info">...</h1>
-          <h1 class="activity-hr">32hrs</h1>
-          <h2 class="activity-prev-time">Last week - 36hrs</h2>
+          <h1 id="work-cur-hr" class="activity-hr">32hrs</h1>
+          <h2 id="work-prev-hr" class="activity-prev-time">Last week - 36hrs</h2>
       </div>
     </div>
     <!-- End Work Activity -->
@@ -50,12 +52,12 @@
       <div class="bottom-box">
           <h2 class="activity-title">Play</h2>
           <h1 class="activity-more-info">...</h1>
-          <h1 class="activity-hr">10hrs</h1>
-          <h2 class="activity-prev-time">Last week - 8hrs</h2>
+          <h1 id="play-cur-hr" class="activity-hr">10hrs</h1>
+          <h2 id="play-prev-hr" class="activity-prev-time">Last week - 8hrs</h2>
       </div>
     </div>
     <!-- End Play Activity -->
-    <!-- Work Activity -->
+    <!-- Study Activity -->
     <div class="activity">
       <div class="top-box study">
         <img src="./images/icon-study.svg">
@@ -63,8 +65,8 @@
       <div class="bottom-box">
           <h2 class="activity-title">Study</h2>
           <h1 class="activity-more-info">...</h1>
-          <h1 class="activity-hr">4hrs</h1>
-          <h2 class="activity-prev-time">Last week - 7hrs</h2>
+          <h1 id="study-cur-hr" class="activity-hr">4hrs</h1>
+          <h2 id="study-prev-hr" class="activity-prev-time">Last week - 7hrs</h2>
       </div>
     </div>
     <!-- End Work Activity -->
@@ -76,8 +78,8 @@
       <div class="bottom-box">
           <h2 class="activity-title">Exercise</h2>
           <h1 class="activity-more-info">...</h1>
-          <h1 class="activity-hr">4hrs</h1>
-          <h2 class="activity-prev-time">Last week - 5hrs</h2>
+          <h1 id="exercise-cur-hr" class="activity-hr">4hrs</h1>
+          <h2 id="exercise-prev-hr" class="activity-prev-time">Last week - 5hrs</h2>
       </div>
     </div>
     <!-- End Exercise Activity -->
@@ -89,8 +91,8 @@
       <div class="bottom-box">
           <h2 class="activity-title">Social</h2>
           <h1 class="activity-more-info">...</h1>
-          <h1 class="activity-hr">5hrs</h1>
-          <h2 class="activity-prev-time">Last week - 10hrs</h2>
+          <h1 id="social-cur-hr" class="activity-hr">5hrs</h1>
+          <h2 id="social-prev-hr" class="activity-prev-time">Last week - 10hrs</h2>
       </div>
     </div>
     <!-- End Social Activity -->
@@ -102,8 +104,8 @@
       <div class="bottom-box">
           <h2 class="activity-title">Self Care</h2>
           <h1 class="activity-more-info">...</h1>
-          <h1 class="activity-hr">2hrs</h1>
-          <h2 class="activity-prev-time">Last week - 2hrs</h2>
+          <h1 id="selfcare-cur-hr" class="activity-hr">2hrs</h1>
+          <h2 id="selfcare-prev-hr" class="activity-prev-time">Last week - 2hrs</h2>
       </div>
     </div>
     <!-- End Self Care Activity -->
