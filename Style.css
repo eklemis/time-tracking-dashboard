@@ -24,7 +24,6 @@ body h2{
 }
 .state{
     width: 320px;
-    min-width: 194px;
     margin: 30px auto;
     overflow: visible;
 }
@@ -91,7 +90,6 @@ body h2{
 
 .activity{
     width: 320px;
-    min-width: 194px;
     margin: 30px auto;
     overflow: visible;
 }
@@ -183,14 +181,14 @@ h2.activity-prev-time{
     .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        width: 78vw;
+        width: 854px;
         margin: auto auto;
-        height: 77vh;
-        row-gap: 5vh;
-        column-gap: 2vw;
+        height: 476px;
+        row-gap: 30px;
+        column-gap: 30px;
     }
     .state{
-        width: 18vw;
+        width: 197px;
         margin: 0px 0px;
         grid-row: 1 / span 2;
     }
@@ -201,7 +199,7 @@ h2.activity-prev-time{
         column-gap: 30px;
     }
     .activity{
-        width: 18vw;
+        width: 197px;
         margin: 0px 0px;
         top: 0;
     }
@@ -213,8 +211,7 @@ h2.activity-prev-time{
         padding-top: 50px;
         flex-direction: column;
         align-items:flex-start;
-        min-height: 171px;
-        height: calc( 30vh + 24px );
+        height: 214px;
         grid-row-gap: 10px;
         padding-left: 30px;
     }
@@ -226,8 +223,7 @@ h2.activity-prev-time{
     }
     .activity .bottom-box{
         grid-template-rows: 1fr 1fr 1fr;
-        min-height: 177px;
-        height: calc(30vh + 3px);
+        height: 193px;
     }
     h1.activity-hr{
         font-size: 42px;
